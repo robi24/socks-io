@@ -51,13 +51,11 @@ describe("Session", () => {
     user2Session = new Session();
   });
 
-  it("should fire the EXAMPLE signal after we run the sessions", (done) => {
+  it("should fire the Example signal after we run the sessions", (done) => {
     // wait for handleExampleSignal function to be called
-    jest
-      .spyOn(user1Session, "handleExampleSignalFromAUser")
-      .mockImplementation(() => {
-        done();
-      });
+    jest.spyOn(user1Session, "handleExampleSignal").mockImplementation(() => {
+      done();
+    });
 
     // start the sessions
     user1Session.run();
