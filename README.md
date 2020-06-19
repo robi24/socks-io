@@ -64,7 +64,7 @@ describe("Session", () => {
     user2Session.run();
   });
 
-  it("should fire the EXAMPLE2 signal after the user2 interaction", (done) => {
+  it("should fire the YesSignal signal after the user2 interaction", (done) => {
     jest.spyOn(user1Session, "openYesNoModal").mockImplementation(() => {
       // mock the user interaction
       user1Session.userAgreed();
