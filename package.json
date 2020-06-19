@@ -1,9 +1,15 @@
 {
   "name": "socks-io",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mocking lib for socket-io",
   "main": "index.js",
   "repository": "git@github.com:robi24/socks-io.git",
+  "keywords": [
+    "mock",
+    "mocksocket",
+    "sockets",
+    "socket-io"
+  ],
   "author": "robi24",
   "license": "MIT",
   "private": false
