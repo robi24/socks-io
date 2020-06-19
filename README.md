@@ -1,6 +1,6 @@
 # socks-io
 
-Your socks for the [socket-io](http://socket.io/). Just a very simple non-blocking mocking lib, but useful if you don't care about the server and just want to test the clients interactions. More suitable for integration tests. Supports `socket.on`, `socket.emit` and `socket.open`.
+Your socks for the [socket-io](http://socket.io/). Just a very simple non-blocking mocking lib, but useful if you don't care about the server and just want to test the clients interactions. Supports `socket.on`, `socket.emit` and `socket.open`.
 
 ## Contents
 
@@ -62,7 +62,7 @@ describe("Session", () => {
     user2Session.run();
   });
 
-  it("should fire the YesSignal signal after the user2 interaction", (done) => {
+  it("should fire the YesSignal signal after the user1 ui interaction", (done) => {
     jest.spyOn(user1Session, "openYesNoModal").mockImplementation(() => {
       // mock the user interaction
       user1Session.userAgreed();

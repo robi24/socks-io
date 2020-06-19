@@ -1,6 +1,6 @@
 {
   "name": "socks-io",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mocking lib for socket-io",
   "main": "index.js",
   "repository": "git@github.com:robi24/socks-io.git",
